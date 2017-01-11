@@ -1,10 +1,9 @@
-# Geometry Processing – Assignment 00
+# Geometry Processing – Introduction
 
 > **To get started:**
 > 
-> ```bash
-> git clone --recursive https://github.com/alecjacobson/geometry-processing-assignment-00
-> ```
+>     git clone --recursive http://github.com/alecjacobson/geometry-processing-introduction.git
+>
 
 Welcome to Geometry Processing! The purpose of this assignment will be to get
 you up and running with the two C++ libraries we will be using:
