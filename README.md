@@ -82,7 +82,7 @@ Why don't you try this right now?
 
 Once built, you can execute the assignment from inside the `build/` using 
 
-    ./00-Introduction
+    ./introduction
 
 After [compiling according to the instructions above](#compilation), if you try
 executing right now, then you'll see a bunny:
