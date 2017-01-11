@@ -17,8 +17,8 @@ managing windows on Linux, Mac OS X and windows.
 ## Prerequisite installation
 
 On all platforms, we will assume you have installed cmake and a modern c++
-compiler on Mac OS X[¹][#mac-footnote], Linux[²][#linux-footnote], or
-Windows[³][#windows-footnote].
+compiler on Mac OS X[¹](#¹macusers), Linux[²](#²linuxusers), or
+Windows[³](#³windowsusers).
 
 We also assume that you have cloned this repository using the `--recursive`
 flag (if not then issue `git submodule update --init --recursive`). 
@@ -105,7 +105,7 @@ the bunny):
 
 Let's get familiar with the _explicit_ mesh representation of a discrete
 surface immersed in $\R^3$. Throughout the course, we will store the set of
-mesh vertices $V$[⁴](#footnoteaboutmath) and the set of triangles (a.k.a.
+mesh vertices $V$[⁴](#⁴latex) and the set of triangles (a.k.a.
 faces) $F$ as two matrices: `V` and `F`.
 
 The matrix `V` is $|V|$ by 3 in size, where the ith row of this matrix contains
@@ -223,11 +223,11 @@ repository](https://github.com/alecjacobson/geometry-processing-introduction/iss
 
 -----------------------------------------------------------------------------
 
-> #### ¹ Mac Users [mac-footnote]
+> #### ¹ Mac Users
 >
 > You will need to install Xcode if you haven't already. 
 >
-> #### ² Linux Users [linux-footnote] 
+> #### ² Linux Users
 >
 > Many linux distributions do not include gcc and the basic development tools
 > in their default installation. On Ubuntu, you need to install the following
@@ -244,13 +244,13 @@ repository](https://github.com/alecjacobson/geometry-processing-introduction/iss
 >     sudo apt-get install libblas-dev
 >
 >
-> #### ³ Windows Users [windows-footnote]
+> #### ³ Windows Users
 >
 > libigl only supports the Microsoft Visual Studio
 > 2015 compiler in 64bit mode. It will not work with a 32bit build and it will
 > not work with older versions of visual studio.
 >
-> #### ⁴ Footnote about $\LaTeX$ 
+> #### ⁴ LaTeX
 >
 > This markdown document, and those for all other assignments, contains
 > $\LaTeX$ math. GitHub just shows the un-evaluated LaTeX code, but other
