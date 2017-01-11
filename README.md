@@ -210,6 +210,17 @@ taks.
 
 Submit your completed homework as a [New Pull Request to this repository](https://github.com/alecjacobson/geometry-processing-introduction/pulls).
 
+### Questions? 
+
+Direct your questions to the [Issues page of this
+repository](https://github.com/alecjacobson/geometry-processing-introduction/issues).
+
+### Answers?
+
+Help your fellow students by answering questions or positions helpful tips on
+the [Issues page of this
+repository](https://github.com/alecjacobson/geometry-processing-introduction/issues).
+
 -----------------------------------------------------------------------------
 
 > #### ¹ Mac Users [mac-footnote]
