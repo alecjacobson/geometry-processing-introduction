@@ -97,7 +97,7 @@ Once built, you can execute the assignment from inside the `build/` using
 After [compiling according to the instructions above](#compilation), if you try
 executing right now, then you'll see a bunny:
 
-![Screenshot of viewer displaying a bunny](data/bunny-screenshot.jpg)
+![Screenshot of viewer displaying a bunny](images/bunny-screenshot.jpg)
 
 You can click and drag to change the view.
 
@@ -137,7 +137,7 @@ around the triangle. Using the right-hand rule, we can define the normal of
 each triangle as the vector that points _most away_ from the surface.
 
 ![The right-hand rule and the counterclockwise ordering convention defines the
-normal of a triangle.](data/right-hand-rule.jpg)
+normal of a triangle.](images/right-hand-rule.jpg)
 
 Each oriented triangle also defines three _directed edges_ between its three
 vertices. Other triangles in the mesh may contain edges with the same incident
@@ -147,7 +147,7 @@ each triangle's directed edge as a _half-edge_.
 
 ![Two neighboring triangles may share the same (unoriented) edge (thick black).
 In a consistently oriented mesh, these triangles' corresponding half-edges
-(orange) will have opposite orientation.](data/half-edges.jpg)
+(orange) will have opposite orientation.](images/half-edges.jpg)
 
 The number of vertices $|V|$ and number of faces $|F|$ and number of unique
 (undirected) edges $|E|$ are _intimately_ related. Adding a new triangle to a
@@ -226,5 +226,5 @@ taks.
 > `README.html` using
 > [multimarkdown](http://fletcherpenney.net/multimarkdown/):
 >
->     cat data/header.md README.md | multimarkdown -o README.html
+>     cat shared/markdown/header.md README.md | multimarkdown -o README.html
 >
