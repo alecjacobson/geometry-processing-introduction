@@ -1,10 +1,10 @@
-# 00-Introduction
+# Geometry Processing – Assignment 00
 
-To get started:
-
-```bash
-git clone --recursive https://github.com/alecjacobson/geometry-processing-assignment-00
-```
+> **To get started:**
+> 
+> ```bash
+> git clone --recursive https://github.com/alecjacobson/geometry-processing-assignment-00
+> ```
 
 Welcome to Geometry Processing! The purpose of this assignment will be to get
 you up and running with the two C++ libraries we will be using:
@@ -127,8 +127,8 @@ the indices into the rows of `V` of the first, second and third corners of the
 jth triangle as a non-negative number (remember in C++ arrays and matrices
 start with index `0`). 
 
-The information in `V` alone is purely positional and encodes the _geometry_ of
-the surface.
+The information in `V` alone is purely positional and encodes the
+_geometry_ of the surface.
 
 The information in `F` alone is purely combinatoric and encodes the _topology_
 of the surface. 
@@ -142,35 +142,40 @@ normal of a triangle.](data/right-hand-rule.jpg)
 
 Each oriented triangle also defines three _directed edges_ between its three
 vertices. Other triangles in the mesh may contain edges with the same incident
-vertices, possibly in the opposite direction.  
+vertices, possibly in the opposite direction. A manifold mesh will have at most
+two triangles incident on the same (undirected) _edge_, therefor we'll refer to
+each triangle's directed edge as a _half-edge_.
 
 ![Two neighboring triangles may share the same (unoriented) edge (thick black).
 In a consistently oriented mesh, these triangles' corresponding half-edges
 (orange) will have opposite orientation.](data/half-edges.jpg)
 
-
-
-For example,
-an edge on the boundary of an _open_ mesh will show up once (one incident
-face). 
-
-
-For a triangle mesh representing a manifold surface, the number of vertices
-$|V|$ and number of faces $|F|$ and number of edges $|E|$ are _intimately_
-related and their relationship strictly depends on the _topology_ of the
-surface that the mesh represents. We capture this relationship the _Euler
-Characteristic_ $χ$ of the polyhedral surface:
+The number of vertices $|V|$ and number of faces $|F|$ and number of unique
+(undirected) edges $|E|$ are _intimately_ related. Adding a new triangle to a
+mesh may mean increasing the number of vertices and edges, too. The algebraic
+relationship between the number of vertices, edges and faces reveals the
+topological _genus_ of the surface via the _Euler Characteristic_ 
 
 $$
-χ = |V| - |E| + |F|.
+χ = 2c - 2h - b,
 $$
 
-This formula is known as _Euler's Formula_. We say that the Euler
-Characteristic is a _topological invariant_ to mean that $χ$ will be the same
-for any mesh of any surface with the _same topology_: same number of
-boundaries, holes, connected components, etc. In this way, a triangle mesh of a
-coffee mug (with a handle) will have the same Euler Characteristic as a
-triangle mesh of a doughnut (with a hole).
+where $c$ is the number of connected components, $h$ is number of
+holes (as in donut), and $b$ is the number of connected components of the
+boundary of the surface.
+
+For meshes representing polyhedral surfaces, the Euler Characteristic can be
+computed very simply:
+
+```
+Chi = |V| - |E| + |F|.
+```
+
+Assuming no _unreferenced_ vertices in `V`, each of the qunatitites in the
+right-hand side can be determined from `F` alone. This indicates that its a
+purely topological property. Changing the geometric positions (i.e., changing
+the vertex positions in `V`) will not affect the Euler Characteristic. Due to
+this, we say that the Euler Characteristic is a _topological invariant_.
 
 ## Tasks
 
@@ -184,7 +189,7 @@ assignment. These tasks will match the header/implementation pairs in the
 Libigl has implemented many of the tasks you'll find in this course. As a
 result, for some assignments, including this one, you'll see a **Groundrules**
 section that lists which functions you can and should use from libigl and/or
-lists functions you may not use (and should avoid copying your answers from).
+functions you may not use (and should avoid copying your answers from).
 
 #### Blacklist libigl functions
 
@@ -199,18 +204,18 @@ For this assignment you may not use
  - `igl::unique_edge_map`
  - or any other libigl function that returns a list of edges.
 
-### Edges 
+### `src/edges.cpp`
 
 From a list of triangles `F`, construct a $|E|$ by 2 matrix `E`, where the kth
 row of this matrix contains the indices into the rows of `V` of the start and
 end point of the kth edge in the mesh. `E` should contain every _undirected
 edge_ exactly once. 
 
-### Euler Characteristic
+### `src/euler_characteristic.cpp`
 
-From a given list of vertices `V` and list of triangles `F`, and the list of
-edges `E` computed from the [previous task](#edges), compute the Euler
-Characteristic `X` of the triangle mesh treated as the surface of a polyehdron.
+From the list of triangles `F`, return the Euler Characteristic `X` of the
+triangle mesh. You may and should use your `edges` function from the previous
+taks.
 
 ------------------------------------------------------------------------------
 
@@ -222,5 +227,5 @@ Characteristic `X` of the triangle mesh treated as the surface of a polyehdron.
 > `README.html` using
 > [multimarkdown](http://fletcherpenney.net/multimarkdown/):
 >
->     cat ../shared/header.md README.md | multimarkdown -o README.html
+>     cat data/header.md README.md | multimarkdown -o README.html
 >
