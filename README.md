@@ -206,6 +206,10 @@ From the list of triangles `F`, return the Euler Characteristic `X` of the
 triangle mesh. You may and should use your `edges` function from the previous
 taks.
 
+### Submission
+
+Submit your completed homework as a [New Pull Request to this repository](https://github.com/alecjacobson/geometry-processing-introduction/pulls).
+
 -----------------------------------------------------------------------------
 
 > #### ¹ Mac Users [mac-footnote]
