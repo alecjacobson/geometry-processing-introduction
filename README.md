@@ -82,7 +82,7 @@ Why don't you try this right now?
 
 Once built, you can execute the assignment from inside the `build/` using 
 
-    ./00-Introduction
+    ./introduction
 
 After [compiling according to the instructions above](#compilation), if you try
 executing right now, then you'll see a bunny:
@@ -206,6 +206,10 @@ From the list of triangles `F`, return the Euler Characteristic `X` of the
 triangle mesh. You may and should use your `edges` function from the previous
 taks.
 
+### Submission
+
+Submit your completed homework as a [New Pull Request to this repository](https://github.com/alecjacobson/geometry-processing-introduction/pulls).
+
 -----------------------------------------------------------------------------
 
 > #### ¹ Mac Users [mac-footnote]
@@ -235,7 +239,7 @@ taks.
 > 2015 compiler in 64bit mode. It will not work with a 32bit build and it will
 > not work with older versions of visual studio.
 >
-> #### ⁴ Footnote about math 
+> #### ⁴ Footnote about $\LaTeX$ 
 >
 > This markdown document, and those for all other assignments, contains
 > $\LaTeX$ math. GitHub just shows the un-evaluated LaTeX code, but other
