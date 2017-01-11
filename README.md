@@ -1,6 +1,10 @@
 # 00-Introduction
 
-_Last edited 21 November 2016_
+To get started:
+
+```bash
+git clone --recursive https://github.com/alecjacobson/geometry-processing-assignment-00
+```
 
 Welcome to Geometry Processing! The purpose of this assignment will be to get
 you up and running with the two C++ libraries we will be using:
@@ -16,9 +20,7 @@ managing windows on Linux, Mac OS X and windows.
 On all platforms, we will assume you have installed cmake.
 
 We also assume that you have cloned this repository using the `--recursive`
-flag or pulled and updated all submodules. If you don't see the `libigl/`
-folder one directory up, then follow the instructions in
-[../README.md](../README.md).
+flag (if not then issue `git submodule update --init --recursive`). 
 
 > **Note for linux users:** Many linux distributions do not include gcc and the
 > basic development tools in their default installation. On Ubuntu, you need to
@@ -57,6 +59,9 @@ All assignments will have a similar directory and file layout:
         function2.cpp
         ...
 
+The `README.md` file will describe the background, contents and tasks of the
+assignment.
+
 The `CMakeLists.txt` file setups up the cmake build routine for this
 assignment.
 
@@ -65,8 +70,7 @@ link to the functions compiled in the `src/` directory. This file contains the
 `main` function that is executed when the program is run from the command line.
 
 The `include/` directory contains one file for each function that you will
-implement as part of the assignment. **_Do not change_** the prototype of these
-functions. In general, you should **_not need to change_** these files at all.
+implement as part of the assignment. **_Do not change_** these files.
 
 The `src/` directory contains _empty implementations_ of the functions
 specified in the `include/` directory. This is where you will implement the
@@ -97,65 +101,58 @@ executing right now, then you'll see a bunny:
 
 You can click and drag to change the view.
 
-Optionally, this program can input a path to triangle mesh file (other than the
-bunny):
+Optionally, this program can input a path to a triangle mesh file (other than
+the bunny):
 
     ./00-Introduction [path to input file]
 
-
-> ## Instructor's notes
->
-> On the _Intructor's branch_ the directory layout will also include:
->
->     00-Introduction/
->       ...
->       solution/
->         function1.cpp
->         function2.cpp
->         ...
->       tests/
->         main.cpp
->
-> The `solution/` directory contains _master solution implementations_ of the
-> functions specified in the `include/` directory.
- 
-> To build the assignment using these files instead of the empty files in
-> `src/` use:
->
->     cmake ../ -DUSE_SOLUTION=ON
->
-> The file `tests/main.cpp` will contain testing code used for grading. To
-> build this instead of the assignment application use:
->
->     cmake ../ -DBUILD_TEST=ON
->
-
 ## Background
 
-Every assignment, including this one, will start with a **Background** section.
-This will review the math and algorithms behind the task in the assignment.
-Students following the lectures should already be familiar with this material
-and may opt to skip this section.
+> Every assignment, including this one, will start with a **Background**
+> section. This will review the math and algorithms behind the task in the
+> assignment. Students following the lectures should already be familiar with
+> this material and may opt to skip this section.
 
-In this assignment 00-Introduction, we will simply get familiar representing a
-mesh made up of set of vertices $V$[^](#footnoteaboutmath) and set of triangles
-(a.k.a. faces) $F$ as two matrices: `V` and `F`.
+Let's get familiar with the _explicit_ mesh representation of a discrete
+surface immersed in $\R^3$. Throughout the course, we will store the set of
+mesh vertices $V$[^](#footnoteaboutmath) and the set of triangles (a.k.a.
+faces) $F$ as two matrices: `V` and `F`.
 
 The matrix `V` is $|V|$ by 3 in size, where the ith row of this matrix contains
-the x-, y- and z-coordinates of the ith vertex of the mesh as a double
-precision floating-point number.
+the x-, y- and z-coordinates of the ith vertex of the mesh. 
 
 The matrix `F` is $|F|$ by 3 in size, where the jth row of this matrix contains
 the indices into the rows of `V` of the first, second and third corners of the
 jth triangle as a non-negative number (remember in C++ arrays and matrices
-start with index `0`).
+start with index `0`). 
 
-Every triangle in `F` uses three vertices of the mesh as its corners. It also
-implicitly defines edges between these corners. Ignoring its orientation or
-direction, an edge may show up in multiple triangles. For example, an edge on
-the boundary of an _open_ mesh will show up once (one incident face).
-Meanwhile, an edge on the interior of a _manifold_ mesh will show up twice (two
-incident faces). 
+The information in `V` alone is purely positional and encodes the _geometry_ of
+the surface.
+
+The information in `F` alone is purely combinatoric and encodes the _topology_
+of the surface. 
+
+By convention, the indices in each row of `F` are _ordered_ counter-clockwise
+around the triangle. Using the right-hand rule, we can define the normal of
+each triangle as the vector that points _most away_ from the surface.
+
+![The right-hand rule and the counterclockwise ordering convention defines the
+normal of a triangle.](data/right-hand-rule.jpg)
+
+Each oriented triangle also defines three _directed edges_ between its three
+vertices. Other triangles in the mesh may contain edges with the same incident
+vertices, possible in the opposite direction.  
+
+![Two neighboring triangles may share the same (unoriented) edge (thick black).
+In a consistently oriented mesh, these triangles' corresponding half-edges
+(orange) will have opposite orientation.](data/half-edges.jpg)
+
+
+
+For example,
+an edge on the boundary of an _open_ mesh will show up once (one incident
+face). 
+
 
 For a triangle mesh representing a manifold surface, the number of vertices
 $|V|$ and number of faces $|F|$ and number of edges $|E|$ are _intimately_
