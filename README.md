@@ -235,7 +235,7 @@ taks.
 > 2015 compiler in 64bit mode. It will not work with a 32bit build and it will
 > not work with older versions of visual studio.
 >
-> #### ⁴ Footnote about math 
+> #### ⁴ Footnote about $\LaTeX$ 
 >
 > This markdown document, and those for all other assignments, contains
 > $\LaTeX$ math. GitHub just shows the un-evaluated LaTeX code, but other
