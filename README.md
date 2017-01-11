@@ -17,7 +17,8 @@ managing windows on Linux, Mac OS X and windows.
 
 ## Prerequisite installation
 
-On all platforms, we will assume you have installed cmake.
+On all platforms, we will assume you have installed cmake and a modern c++
+compiler.
 
 We also assume that you have cloned this repository using the `--recursive`
 flag (if not then issue `git submodule update --init --recursive`). 
@@ -97,7 +98,7 @@ Once built, you can execute the assignment from inside the `build/` using
 After [compiling according to the instructions above](#compilation), if you try
 executing right now, then you'll see a bunny:
 
-![Screenshot of viewer displaying a bunny](../images/bunny-screenshot.jpg)
+![Screenshot of viewer displaying a bunny](data/bunny-screenshot.jpg)
 
 You can click and drag to change the view.
 
@@ -141,7 +142,7 @@ normal of a triangle.](data/right-hand-rule.jpg)
 
 Each oriented triangle also defines three _directed edges_ between its three
 vertices. Other triangles in the mesh may contain edges with the same incident
-vertices, possible in the opposite direction.  
+vertices, possibly in the opposite direction.  
 
 ![Two neighboring triangles may share the same (unoriented) edge (thick black).
 In a consistently oriented mesh, these triangles' corresponding half-edges
