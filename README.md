@@ -1,8 +1,8 @@
 # Geometry Processing – Introduction
 
-> **To get started:**
+> **To get started:** Fork this repository then issue
 > 
->     git clone --recursive http://github.com/alecjacobson/geometry-processing-introduction.git
+>     git clone --recursive http://github.com/[username]/geometry-processing-introduction.git
 >
 
 Welcome to Geometry Processing! The purpose of this assignment will be to get
