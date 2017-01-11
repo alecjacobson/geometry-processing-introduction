@@ -17,47 +17,33 @@ managing windows on Linux, Mac OS X and windows.
 ## Prerequisite installation
 
 On all platforms, we will assume you have installed cmake and a modern c++
-compiler.
+compiler on Mac OS X[¹][#mac-footnote], Linux[²][#linux-footnote], or
+Windows[³][#windows-footnote].
 
 We also assume that you have cloned this repository using the `--recursive`
 flag (if not then issue `git submodule update --init --recursive`). 
-
-> **Note for linux users:** Many linux distributions do not include gcc and the
-> basic development tools in their default installation. On Ubuntu, you need to
-> install the following packages:
->
->     sudo apt-get install git
->     sudo apt-get install build-essential
->     sudo apt-get install cmake
->     sudo apt-get install libx11-dev
->     sudo apt-get install mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev
->     sudo apt-get install libxrandr-dev
->     sudo apt-get install libxi-dev
->     sudo apt-get install libxmu-dev
->     sudo apt-get install libblas-dev
-
--------------------------------------------------------------------------------
-
-> **Note for windows users:** libigl only supports the Microsoft Visual Studio
-> 2015 compiler in 64bit mode. It will not work with a 32bit build and it will
-> not work with older versions of visual studio.
 
 ## Layout
 
 All assignments will have a similar directory and file layout:
 
-    00-Introduction/
-      README.md
-      CMakeLists.txt
-      main.cpp
-      include/
-        function1.h
-        function2.h
-        ...
-      src/
-        function1.cpp
-        function2.cpp
-        ...
+    README.md
+    CMakeLists.txt
+    main.cpp
+    include/
+      function1.h
+      function2.h
+      ...
+    src/
+      function1.cpp
+      function2.cpp
+      ...
+    shared/
+      libigl/
+        include/
+          igl/
+            ...
+      ...
 
 The `README.md` file will describe the background, contents and tasks of the
 assignment.
@@ -75,6 +61,10 @@ implement as part of the assignment. **_Do not change_** these files.
 The `src/` directory contains _empty implementations_ of the functions
 specified in the `include/` directory. This is where you will implement the
 parts of the assignment.
+
+The `shared/` directory will contain shared resources: cmake files, dependences
+(e.g., libigl) and data. Feel free to poke around in here, but you shouldn't
+change any of these files.
 
 ## Compilation
 
@@ -115,7 +105,7 @@ the bunny):
 
 Let's get familiar with the _explicit_ mesh representation of a discrete
 surface immersed in $\R^3$. Throughout the course, we will store the set of
-mesh vertices $V$[^](#footnoteaboutmath) and the set of triangles (a.k.a.
+mesh vertices $V$[⁴](#footnoteaboutmath) and the set of triangles (a.k.a.
 faces) $F$ as two matrices: `V` and `F`.
 
 The matrix `V` is $|V|$ by 3 in size, where the ith row of this matrix contains
@@ -216,9 +206,36 @@ From the list of triangles `F`, return the Euler Characteristic `X` of the
 triangle mesh. You may and should use your `edges` function from the previous
 taks.
 
-------------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
-> #### ^ Footnote about math 
+> #### ¹ Mac Users [mac-footnote]
+>
+> You will need to install Xcode if you haven't already. 
+>
+> #### ² Linux Users [linux-footnote] 
+>
+> Many linux distributions do not include gcc and the basic development tools
+> in their default installation. On Ubuntu, you need to install the following
+> packages:
+>
+>     sudo apt-get install git
+>     sudo apt-get install build-essential
+>     sudo apt-get install cmake
+>     sudo apt-get install libx11-dev
+>     sudo apt-get install mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev
+>     sudo apt-get install libxrandr-dev
+>     sudo apt-get install libxi-dev
+>     sudo apt-get install libxmu-dev
+>     sudo apt-get install libblas-dev
+>
+>
+> #### ³ Windows Users [windows-footnote]
+>
+> libigl only supports the Microsoft Visual Studio
+> 2015 compiler in 64bit mode. It will not work with a 32bit build and it will
+> not work with older versions of visual studio.
+>
+> #### ⁴ Footnote about math 
 >
 > This markdown document, and those for all other assignments, contains
 > $\LaTeX$ math. GitHub just shows the un-evaluated LaTeX code, but other
