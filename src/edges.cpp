@@ -2,24 +2,27 @@
 #include <array>
 #include <set>
 
+struct ua: public std::array<int,2> {
+    template <typename... Args>
+        ua(Args&&... args)
+        : std::array<int,2>{std::forward<Args>(args)...} {
+            std::sort(begin(),end());
+        }
+
+};
+
+
 Eigen::MatrixXi edges(const Eigen::MatrixXi &F)
 {
-    using EA = std::array<int,2>;
-    std::set<EA> es;
+    std::set<ua> es;
 
-    auto mkarr = [](int a, int b) -> EA {
-        if(a < b) {
-            return {{a,b}};
-        } else {
-            return {{b,a}};
-        }
-    };
 
+    const static int fedges[3][2] = {{0,1}, {0,2}, {1,2}};
     for(int r = 0; r < F.rows(); ++r) {
         auto&& f = F.row(r);
-        es.emplace(mkarr(f(0),f(1)));
-        es.emplace(mkarr(f(0),f(2)));
-        es.emplace(mkarr(f(2),f(1)));
+        for(auto&& o: fedges) {
+            es.emplace(ua{f(o[0]),f(o[1])});
+        }
     }
 
 
