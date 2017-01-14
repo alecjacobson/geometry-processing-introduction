@@ -1,0 +1,8 @@
+C:/Program Files (x86)/introduction/include/GLFW/glfw3.h
+C:/Program Files (x86)/introduction/include/GLFW/glfw3native.h
+C:/Program Files (x86)/introduction/lib/cmake/glfw3/glfw3Config.cmake
+C:/Program Files (x86)/introduction/lib/cmake/glfw3/glfw3ConfigVersion.cmake
+C:/Program Files (x86)/introduction/lib/cmake/glfw3/glfw3Targets.cmake
+C:/Program Files (x86)/introduction/lib/cmake/glfw3/glfw3Targets-debug.cmake
+C:/Program Files (x86)/introduction/lib/pkgconfig/glfw3.pc
+C:/Program Files (x86)/introduction/lib/glfw3.lib

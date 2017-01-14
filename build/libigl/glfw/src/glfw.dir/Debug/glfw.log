@@ -1,0 +1,3 @@
+﻿  Building Custom Rule C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/external/nanogui/ext/glfw/src/CMakeLists.txt
+  CMake does not need to re-run because C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\CMakeFiles\generate.stamp is up-to-date.
+  glfw.vcxproj -> C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\Debug\glfw3.lib

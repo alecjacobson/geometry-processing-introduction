@@ -1,0 +1,38 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_de34e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/13/2017 12:54:40 PM.
+Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_de34e.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_de34e.dir\Debug\".
+  Creating directory "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_de34e.dir\Debug\cmTC_de34e.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_de34e.dir\Debug\cmTC_de34e.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_de34e.dir\Debug\\" /Fd"cmTC_de34e.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_de34e.dir\Debug\\" /Fd"cmTC_de34e.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_de34e.vcxproj]
+Done Building Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_de34e.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_de34e.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_de34e.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.81
+
+

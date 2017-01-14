@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\3d9ba5149d69182cc0676607c2680b4a\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CC4B8FFA-15D1-35F5-B30C-48912516DCCE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

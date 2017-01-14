@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/external/nanogui/ext/glew/CMakeLists.txt
+  CMake does not need to re-run because C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glew\CMakeFiles\generate.stamp is up-to-date.
+  glew.c
+x64\Debug\glew.obj : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'X86'

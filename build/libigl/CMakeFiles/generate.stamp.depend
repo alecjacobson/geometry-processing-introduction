@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/shared/cmake/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
