@@ -19,7 +19,7 @@ int euler_characteristic(const Eigen::MatrixXi &F)
     
     v2 = E(i,1);
     if (std::find(vertices.begin(), vertices.end(), v2) == vertices.end() ) {
-      vertices.push_back(v1);
+      vertices.push_back(v2);
     }
   }
   
