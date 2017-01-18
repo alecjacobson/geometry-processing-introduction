@@ -32,3 +32,6 @@ README.html
 *.un~
 *.swo
 *.swp
+
+#Build Folder
+build/
