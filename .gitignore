@@ -33,3 +33,4 @@ README.html
 *.swo
 *.swp
 build/*
+*.DS_Store
