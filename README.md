@@ -94,7 +94,7 @@ You can click and drag to change the view.
 Optionally, this program can input a path to a triangle mesh file (other than
 the bunny):
 
-    ./00-Introduction [path to input file]
+    ./introduction [path to input file]
 
 ## Background
 
