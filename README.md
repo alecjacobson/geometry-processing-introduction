@@ -188,6 +188,7 @@ For this assignment you may not use
  - `igl::edge_flaps`
  - `igl::edge_topology`
  - `igl::edges`
+ - `igl::euler_characteristic`
  - `igl::exterior_edges`
  - `igl::is_boundary_edge`
  - `igl::unique_edge_map`
