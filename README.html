@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link type="text/css" rel="stylesheet" href="shared/css/style.css"/>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+
+<div style="display:none">
+$$\newcommand{\R}{\mathbb{R}}$$
+</div>
+
+<h1 id="geometryprocessing–introduction">Geometry Processing – Introduction</h1>
+
+<blockquote>
+<p><strong>To get started:</strong> Fork this repository then issue</p>
+
+<pre><code>git clone --recursive http://github.com/[username]/geometry-processing-introduction.git
+</code></pre>
+</blockquote>
+
+<p>Welcome to Geometry Processing! The purpose of this assignment will be to get
+you up and running with the two C++ libraries we will be using:
+<a href="http://eigen.tuxfamily.org">Eigen</a> for dense and sparse linear algebra
+routines and <a href="https://github.com/libigl/libigl">libigl</a> for geometry processing
+routines. We will make use of the OpenGL-based viewer used by the <a href="http://libigl.github.io/libigl/tutorial/tutorial.html">libigl
+tutorial</a>. This viewer
+also depends on <a href="http://www.glfw.org/download.html">glfw</a>, a library for
+managing windows on Linux, Mac OS X and windows.</p>
+
+<h2 id="prerequisiteinstallation">Prerequisite installation</h2>
+
+<p>On all platforms, we will assume you have installed cmake and a modern c++
+compiler on Mac OS X<a href="#¹macusers">¹</a>, Linux<a href="#²linuxusers">²</a>, or
+Windows<a href="#³windowsusers">³</a>.</p>
+
+<p>We also assume that you have cloned this repository using the <code>--recursive</code>
+flag (if not then issue <code>git submodule update --init --recursive</code>). </p>
+
+<h2 id="layout">Layout</h2>
+
+<p>All assignments will have a similar directory and file layout:</p>
+
+<pre><code>README.md
+CMakeLists.txt
+main.cpp
+include/
+  function1.h
+  function2.h
+  ...
+src/
+  function1.cpp
+  function2.cpp
+  ...
+shared/
+  libigl/
+    include/
+      igl/
+        ...
+  ...
+</code></pre>
+
+<p>The <code>README.md</code> file will describe the background, contents and tasks of the
+assignment.</p>
+
+<p>The <code>CMakeLists.txt</code> file setups up the cmake build routine for this
+assignment.</p>
+
+<p>The <code>main.cpp</code> file will include the headers in the <code>include/</code> directory and
+link to the functions compiled in the <code>src/</code> directory. This file contains the
+<code>main</code> function that is executed when the program is run from the command line.</p>
+
+<p>The <code>include/</code> directory contains one file for each function that you will
+implement as part of the assignment. <strong><em>Do not change</em></strong> these files.</p>
+
+<p>The <code>src/</code> directory contains <em>empty implementations</em> of the functions
+specified in the <code>include/</code> directory. This is where you will implement the
+parts of the assignment.</p>
+
+<p>The <code>shared/</code> directory will contain shared resources: cmake files, dependences
+(e.g., libigl) and data. Feel free to poke around in here, but you shouldn&#8217;t
+change any of these files.</p>
+
+<h2 id="compilation">Compilation</h2>
+
+<p>This and all following assignments will follow a typical cmake/make build
+routine. Starting in this directory, issue:</p>
+
+<pre><code>mkdir build
+cd build
+cmake ..
+make 
+</code></pre>
+
+<p>Why don&#8217;t you try this right now?</p>
+
+<h2 id="execution">Execution</h2>
+
+<p>Once built, you can execute the assignment from inside the <code>build/</code> using </p>
+
+<pre><code>./introduction
+</code></pre>
+
+<p>After <a href="#compilation">compiling according to the instructions above</a>, if you try
+executing right now, then you&#8217;ll see a bunny:</p>
+
+<figure>
+<img src="images/bunny-screenshot.jpg" alt="Screenshot of viewer displaying a bunny" />
+<figcaption>Screenshot of viewer displaying a bunny</figcaption>
+</figure>
+
+<p>You can click and drag to change the view.</p>
+
+<p>Optionally, this program can input a path to a triangle mesh file (other than
+the bunny):</p>
+
+<pre><code>./introduction [path to input file]
+</code></pre>
+
+<h2 id="background">Background</h2>
+
+<blockquote>
+<p>Every assignment, including this one, will start with a <strong>Background</strong>
+section. This will review the math and algorithms behind the task in the
+assignment. Students following the lectures should already be familiar with
+this material and may opt to skip this section.</p>
+</blockquote>
+
+<p>Let&#8217;s get familiar with the <em>explicit</em> mesh representation of a discrete
+surface immersed in <span class="math">\(\R^3\)</span>. Throughout the course, we will store the set of
+mesh vertices <span class="math">\(V\)</span><a href="#⁴latex">⁴</a> and the set of triangles (a.k.a.
+faces) <span class="math">\(F\)</span> as two matrices: <code>V</code> and <code>F</code>.</p>
+
+<p>The matrix <code>V</code> is <span class="math">\(|V|\)</span> by 3 in size, where the ith row of this matrix contains
+the x-, y- and z-coordinates of the ith vertex of the mesh. </p>
+
+<p>The matrix <code>F</code> is <span class="math">\(|F|\)</span> by 3 in size, where the jth row of this matrix contains
+the indices into the rows of <code>V</code> of the first, second and third corners of the
+jth triangle as a non-negative number (remember in C++ arrays and matrices
+start with index <code>0</code>). </p>
+
+<p>The information in <code>V</code> alone is purely positional and encodes the
+<em>geometry</em> of the surface.</p>
+
+<p>The information in <code>F</code> alone is purely combinatoric and encodes the <em>topology</em>
+of the surface. </p>
+
+<p>By convention, the indices in each row of <code>F</code> are <em>ordered</em> counter-clockwise
+around the triangle. Using the right-hand rule, we can define the normal of
+each triangle as the vector that points <em>most away</em> from the surface.</p>
+
+<figure>
+<img src="images/right-hand-rule.jpg" alt="The right-hand rule and the counterclockwise ordering convention defines the
+normal of a triangle." />
+<figcaption>The right-hand rule and the counterclockwise ordering convention defines the
+normal of a triangle.</figcaption>
+</figure>
+
+<p>Each oriented triangle also defines three <em>directed edges</em> between its three
+vertices. Other triangles in the mesh may contain edges with the same incident
+vertices, possibly in the opposite direction. A manifold mesh will have at most
+two triangles incident on the same (undirected) <em>edge</em>, therefor we&#8217;ll refer to
+each triangle&#8217;s directed edge as a <em>half-edge</em>.</p>
+
+<figure>
+<img src="images/half-edges.jpg" alt="Two neighboring triangles may share the same (unoriented) edge (thick black).
+In a consistently oriented mesh, these triangles' corresponding half-edges
+(orange) will have opposite orientation." />
+<figcaption>Two neighboring triangles may share the same (unoriented) edge (thick black).
+In a consistently oriented mesh, these triangles&#8217; corresponding half-edges
+(orange) will have opposite orientation.</figcaption>
+</figure>
+
+<p>The number of vertices <span class="math">\(|V|\)</span> and number of faces <span class="math">\(|F|\)</span> and number of unique
+(undirected) edges <span class="math">\(|E|\)</span> are <em>intimately</em> related. Adding a new triangle to a
+mesh may mean increasing the number of vertices and edges, too. The algebraic
+relationship between the number of vertices, edges and faces reveals the
+topological <em>genus</em> of the surface via the <em>Euler Characteristic</em> </p>
+
+<p>$$
+χ = 2c - 2h - b,
+$$</p>
+
+<p>where <span class="math">\(c\)</span> is the number of connected components, <span class="math">\(h\)</span> is number of
+holes (as in donut), and <span class="math">\(b\)</span> is the number of connected components of the
+boundary of the surface.</p>
+
+<p>For meshes representing polyhedral surfaces, the Euler Characteristic can be
+computed very simply:</p>
+
+<pre><code>Chi = |V| - |E| + |F|.
+</code></pre>
+
+<p>Assuming no <em>unreferenced</em> vertices in <code>V</code>, each of the qunatitites in the
+right-hand side can be determined from <code>F</code> alone. This indicates that its a
+purely topological property. Changing the geometric positions (i.e., changing
+the vertex positions in <code>V</code>) will not affect the Euler Characteristic. Due to
+this, we say that the Euler Characteristic is a <em>topological invariant</em>.</p>
+
+<h2 id="tasks">Tasks</h2>
+
+<p>Every assignment, including this one, will contain a <strong>Tasks</strong> section. This
+will enumerate all of the tasks a student will need to complete for this
+assignment. These tasks will match the header/implementation pairs in the
+<code>include/</code>/<code>src/</code> directories.</p>
+
+<h3 id="groundrules">Groundrules</h3>
+
+<p>Libigl has implemented many of the tasks you&#8217;ll find in this course. As a
+result, for some assignments, including this one, you&#8217;ll see a <strong>Groundrules</strong>
+section that lists which functions you can and should use from libigl and/or
+functions you may not use (and should avoid copying your answers from).</p>
+
+<h4 id="blacklistlibiglfunctions">Blacklist libigl functions</h4>
+
+<p>For this assignment you may not use</p>
+
+<ul>
+<li><code>igl::all_edges</code></li>
+<li><code>igl::edge_flaps</code></li>
+<li><code>igl::edge_topology</code></li>
+<li><code>igl::edges</code></li>
+<li><code>igl::euler_characteristic</code></li>
+<li><code>igl::exterior_edges</code></li>
+<li><code>igl::is_boundary_edge</code></li>
+<li><code>igl::unique_edge_map</code></li>
+<li>or any other libigl function that returns a list of edges.</li>
+</ul>
+
+<h3 id="srcedges.cpp"><code>src/edges.cpp</code></h3>
+
+<p>From a list of triangles <code>F</code>, construct a <span class="math">\(|E|\)</span> by 2 matrix <code>E</code>, where the kth
+row of this matrix contains the indices into the rows of <code>V</code> of the start and
+end point of the kth edge in the mesh. <code>E</code> should contain every <em>undirected
+edge</em> exactly once. </p>
+
+<h3 id="srceuler_characteristic.cpp"><code>src/euler_characteristic.cpp</code></h3>
+
+<p>From the list of triangles <code>F</code>, return the Euler Characteristic <code>X</code> of the
+triangle mesh. You may and should use your <code>edges</code> function from the previous
+taks.</p>
+
+<h3 id="submission">Submission</h3>
+
+<p>Submit your completed homework as a <a href="https://github.com/alecjacobson/geometry-processing-introduction/pulls">New Pull Request to this repository</a>.</p>
+
+<h3 id="questions">Questions?</h3>
+
+<p>Direct your questions to the <a href="https://github.com/alecjacobson/geometry-processing-introduction/issues">Issues page of this
+repository</a>.</p>
+
+<h3 id="answers">Answers?</h3>
+
+<p>Help your fellow students by answering questions or positions helpful tips on
+the <a href="https://github.com/alecjacobson/geometry-processing-introduction/issues">Issues page of this
+repository</a>.</p>
+
+<hr />
+
+<blockquote>
+<h4 id="¹macusers">¹ Mac Users</h4>
+
+<p>You will need to install Xcode if you haven&#8217;t already. </p>
+
+<h4 id="²linuxusers">² Linux Users</h4>
+
+<p>Many linux distributions do not include gcc and the basic development tools
+in their default installation. On Ubuntu, you need to install the following
+packages:</p>
+
+<pre><code>sudo apt-get install git
+sudo apt-get install build-essential
+sudo apt-get install cmake
+sudo apt-get install libx11-dev
+sudo apt-get install mesa-common-dev libgl1-mesa-dev libglu1-mesa-dev
+sudo apt-get install libxrandr-dev
+sudo apt-get install libxi-dev
+sudo apt-get install libxmu-dev
+sudo apt-get install libblas-dev
+</code></pre>
+
+<h4 id="³windowsusers">³ Windows Users</h4>
+
+<p>libigl only supports the Microsoft Visual Studio
+2015 compiler in 64bit mode. It will not work with a 32bit build and it will
+not work with older versions of visual studio.</p>
+
+<h4 id="⁴latex">⁴ LaTeX</h4>
+
+<p>This markdown document, and those for all other assignments, contains
+<span class="math">\(\LaTeX\)</span> math. GitHub just shows the un-evaluated LaTeX code, but other
+markdown browsers will show the typeset math. You can also generate
+<code>README.html</code> using
+<a href="http://fletcherpenney.net/multimarkdown/">multimarkdown</a>:</p>
+
+<pre><code>cat shared/markdown/header.md README.md | multimarkdown -o README.html
+</code></pre>
+</blockquote>
+
+</body>
+</html>

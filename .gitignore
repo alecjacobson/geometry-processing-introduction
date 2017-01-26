@@ -28,7 +28,6 @@
 *.out
 *.app
 
-README.html
 *.un~
 *.swo
 *.swp
