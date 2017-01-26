@@ -209,7 +209,7 @@ taks.
 
 ### Submission
 
-Submit your completed homework as a [New Pull Request to this repository](https://github.com/alecjacobson/geometry-processing-introduction/pulls).
+Submit your completed /src directory to Canvas along with a textfile called README.txt indicating how you went about your implementations, difficulties you encountered while coding, and what things you found were unclear, if any. 
 
 ### Questions? 
 
