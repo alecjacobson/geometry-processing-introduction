@@ -1,0 +1,15 @@
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/introduction.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/INSTALL.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/ALL_BUILD.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/ZERO_CHECK.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/CMakeFiles/INSTALL.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/CMakeFiles/ALL_BUILD.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/glfw/CMakeFiles/uninstall.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/glfw/CMakeFiles/INSTALL.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/glfw/CMakeFiles/ALL_BUILD.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/glfw/src/CMakeFiles/glfw_objects.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/glfw/src/CMakeFiles/glfw.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/glfw/src/CMakeFiles/INSTALL.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/glew/CMakeFiles/glew.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/glew/CMakeFiles/INSTALL.dir
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/glew/CMakeFiles/ALL_BUILD.dir

@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/external/nanogui/ext/glew/CMakeLists.txt
+  CMake does not need to re-run because C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glew\CMakeFiles\generate.stamp is up-to-date.
+  glew.c
+  glew.vcxproj -> C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glew\Release\glew.lib

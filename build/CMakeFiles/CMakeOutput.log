@@ -1,0 +1,338 @@
+The system is: Windows - 10.0.14393 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/13/2017 12:54:30 PM.
+Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\3.7.1\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\3.7.1\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\3.7.1\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.82
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/3.7.1/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/13/2017 12:54:32 PM.
+Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\3.7.1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\3.7.1\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\3.7.1\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.99
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/3.7.1/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_cac2d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/13/2017 12:54:33 PM.
+Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_cac2d.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_cac2d.dir\Debug\".
+  Creating directory "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_cac2d.dir\Debug\cmTC_cac2d.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_cac2d.dir\Debug\cmTC_cac2d.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cac2d.dir\Debug\\" /Fd"cmTC_cac2d.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cac2d.dir\Debug\\" /Fd"cmTC_cac2d.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\cmTC_cac2d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp/Debug/cmTC_cac2d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp/Debug/cmTC_cac2d.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_cac2d.dir\Debug\testCCompiler.obj
+  cmTC_cac2d.vcxproj -> C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\cmTC_cac2d.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_cac2d.dir\Debug\cmTC_cac2d.tlog\unsuccessfulbuild".
+  Touching "cmTC_cac2d.dir\Debug\cmTC_cac2d.tlog\cmTC_cac2d.lastbuildstate".
+Done Building Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_cac2d.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.05
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_0761e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/13/2017 12:54:35 PM.
+Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_0761e.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_0761e.dir\Debug\".
+  Creating directory "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_0761e.dir\Debug\cmTC_0761e.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_0761e.dir\Debug\cmTC_0761e.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0761e.dir\Debug\\" /Fd"cmTC_0761e.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0761e.dir\Debug\\" /Fd"cmTC_0761e.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\cmTC_0761e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp/Debug/cmTC_0761e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp/Debug/cmTC_0761e.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_0761e.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_0761e.vcxproj -> C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\cmTC_0761e.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_0761e.dir\Debug\cmTC_0761e.tlog\unsuccessfulbuild".
+  Touching "cmTC_0761e.dir\Debug\cmTC_0761e.tlog\cmTC_0761e.lastbuildstate".
+Done Building Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_0761e.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.06
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_49ac6.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/13/2017 12:54:36 PM.
+Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_49ac6.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_49ac6.dir\Debug\".
+  Creating directory "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_49ac6.dir\Debug\cmTC_49ac6.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_49ac6.dir\Debug\cmTC_49ac6.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_49ac6.dir\Debug\\" /Fd"cmTC_49ac6.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_49ac6.dir\Debug\\" /Fd"cmTC_49ac6.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\cmTC_49ac6.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ac6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ac6.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_49ac6.dir\Debug\testCXXCompiler.obj
+  cmTC_49ac6.vcxproj -> C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\cmTC_49ac6.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_49ac6.dir\Debug\cmTC_49ac6.tlog\unsuccessfulbuild".
+  Touching "cmTC_49ac6.dir\Debug\cmTC_49ac6.tlog\cmTC_49ac6.lastbuildstate".
+Done Building Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_49ac6.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.05
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_f8d20.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/13/2017 12:54:37 PM.
+Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_f8d20.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_f8d20.dir\Debug\".
+  Creating directory "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_f8d20.dir\Debug\cmTC_f8d20.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_f8d20.dir\Debug\cmTC_f8d20.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f8d20.dir\Debug\\" /Fd"cmTC_f8d20.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f8d20.dir\Debug\\" /Fd"cmTC_f8d20.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\cmTC_f8d20.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp/Debug/cmTC_f8d20.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp/Debug/cmTC_f8d20.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_f8d20.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_f8d20.vcxproj -> C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\cmTC_f8d20.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_f8d20.dir\Debug\cmTC_f8d20.tlog\unsuccessfulbuild".
+  Touching "cmTC_f8d20.dir\Debug\cmTC_f8d20.tlog\cmTC_f8d20.lastbuildstate".
+Done Building Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_f8d20.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.06
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_e0f10.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 1/13/2017 12:54:39 PM.
+Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_e0f10.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_e0f10.dir\Debug\".
+  Creating directory "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_e0f10.dir\Debug\cmTC_e0f10.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_e0f10.dir\Debug\cmTC_e0f10.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e0f10.dir\Debug\\" /Fd"cmTC_e0f10.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\feature_tests.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e0f10.dir\Debug\\" /Fd"cmTC_e0f10.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\feature_tests.cxx"
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\cmTC_e0f10.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp/Debug/cmTC_e0f10.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/CMakeFiles/CMakeTmp/Debug/cmTC_e0f10.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_e0f10.dir\Debug\feature_tests.obj
+  cmTC_e0f10.vcxproj -> C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\Debug\cmTC_e0f10.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_e0f10.dir\Debug\cmTC_e0f10.tlog\unsuccessfulbuild".
+  Touching "cmTC_e0f10.dir\Debug\cmTC_e0f10.tlog\cmTC_e0f10.lastbuildstate".
+Done Building Project "C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\CMakeFiles\CMakeTmp\cmTC_e0f10.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.05
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates

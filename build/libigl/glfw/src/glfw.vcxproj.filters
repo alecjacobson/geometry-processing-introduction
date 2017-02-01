@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\shared\libigl\external\nanogui\ext\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\context.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\init.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\input.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\monitor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\vulkan.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\window.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\win32_init.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\win32_joystick.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\win32_monitor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\win32_time.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\win32_tls.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\win32_window.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\wgl_context.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\src\glfw_objects.dir\$(Configuration)\egl_context.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{8CB6AE6E-FD65-3419-8E3E-F7B60165F175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{6DFDEB7E-1789-32F9-8843-1002CF4DBC62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

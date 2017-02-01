@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/external/nanogui/ext/glfw/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CheckIncludeFile.c.in
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/external/nanogui/ext/glfw/CMake/modules/FindVulkan.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/external/nanogui/ext/glfw/src/glfw3Config.cmake.in
+C:/Program Files/CMake/share/cmake-3.7/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/external/nanogui/ext/glfw/src/glfw_config.h.in
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/external/nanogui/ext/glfw/src/glfw3.pc.in
+C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/external/nanogui/ext/glfw/cmake_uninstall.cmake.in

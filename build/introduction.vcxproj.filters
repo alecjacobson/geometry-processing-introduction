@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\src\edges.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\src\euler_characteristic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F7E8800C-6308-3037-A163-4D09DB4CBDDF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

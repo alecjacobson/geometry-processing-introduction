@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/shared/libigl/external/nanogui/ext/glfw/CMakeLists.txt
+  CMake does not need to re-run because C:\UoT-Masters\Geometry-Processing\geometry-processing-introduction\build\libigl\glfw\CMakeFiles\generate.stamp is up-to-date.
+  CMake Error at cmake_uninstall.cmake:3 (message):
+    Cannot find install manifest:
+    "C:/UoT-Masters/Geometry-Processing/geometry-processing-introduction/build/libigl/glfw/install_manifest.txt"
+  
+  
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(171,5): error MSB6006: "cmd.exe" exited with code 1.
