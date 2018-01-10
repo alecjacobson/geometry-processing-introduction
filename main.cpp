@@ -1,4 +1,5 @@
 #include "edges.h"
+
 #include "euler_characteristic.h"
 #include <igl/read_triangle_mesh.h>
 #include <igl/viewer/Viewer.h>
