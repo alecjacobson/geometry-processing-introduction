@@ -48,5 +48,6 @@ Eigen::MatrixXi edges(const Eigen::MatrixXi &F)
         }
         
     }
+    return E;
 
 }
