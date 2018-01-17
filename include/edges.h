@@ -1,7 +1,6 @@
 #ifndef EDGES_H
 #define EDGES_H
 #include <Eigen/Core>
-#include <iostream>
 // From a list of triangle indices into some vertex set V, determine the
 // set of unique undirected edges.
 //

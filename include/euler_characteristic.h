@@ -3,7 +3,6 @@
 
 #include "edges.h"
 #include <Eigen/Core>
-#include <set>
 // Compute the Euler Characteristic of a given triangle mesh.
 //
 // Inputs:
