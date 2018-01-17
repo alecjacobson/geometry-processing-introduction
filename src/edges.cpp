@@ -2,32 +2,33 @@
 
 Eigen::MatrixXi edges(const Eigen::MatrixXi &F)
 {
-  Eigen::MatrixXi E;
   int E_size = 0;
-  std::set<std::tuple<int, int>> seenEdges;
-  std::cout << "Size of F is " << F.rows() << std::endl;
-  for(int f_idx=0; f_idx < F.rows(); f_idx++){
-    E_size = addToEdges(E, E_size, seenEdges, F(f_idx,0), F(f_idx,1));
-    E_size = addToEdges(E, E_size, seenEdges, F(f_idx,0), F(f_idx,2));
-    E_size = addToEdges(E, E_size, seenEdges, F(f_idx,1), F(f_idx,2));
+  Eigen::MatrixXi E;
+
+  // F contains indicies into V, and no vertex is unreferenced
+  // so |V| is the largest index seen + 1
+  int V_size = F.maxCoeff() + 1;
+  Eigen::MatrixXi seenEdges = Eigen::MatrixXi::Zero(V_size, V_size);
+
+  // Iterate over F and add each of its edges to E
+  for(int f_idx = 0; f_idx < F.rows(); f_idx++){
+    addToEdges(E, E_size, seenEdges, F(f_idx,0), F(f_idx,1));
+    addToEdges(E, E_size, seenEdges, F(f_idx,0), F(f_idx,2));
+    addToEdges(E, E_size, seenEdges, F(f_idx,1), F(f_idx,2));
   }
-  //10449
   return E;
 }
 
-int addToEdges(Eigen::MatrixXi &E, int E_size, std::set<std::tuple<int, int>> &seenEdges, int vertexA, int vertexB){
-  if(!alreadySeen(seenEdges, vertexA, vertexB)){
+// Adds the undirected edge (vertexA, vertexB) to E if it is not in seenEdges, and returns an updated E_size
+void addToEdges(Eigen::MatrixXi &E, int &E_size, Eigen::MatrixXi &seenEdges, int vertexA, int vertexB){
+  if(!seenEdges(vertexA, vertexB)){
     E_size += 1;
     E.resize(E_size, 2);
+    // Add the new undirected edge to E
     E(E_size-1, 0) = vertexA;
     E(E_size-1,1) = vertexB;
-    seenEdges.insert(std::make_tuple(vertexA, vertexB));
+    // Mark the edge as seen in either direction
+    seenEdges(vertexA, vertexB) = 1;
+    seenEdges(vertexB, vertexA) = 1;
   }
-  return E_size;
-}
-
-bool alreadySeen(std::set<std::tuple<int, int>> seenEdges, int vertexA, int vertexB){
-  std::tuple<int,int> edge = std::make_tuple(vertexA, vertexB);
-  std::tuple<int,int> reversedEdge = std::make_tuple(vertexB, vertexA);
-  return (seenEdges.find(edge) != seenEdges.end()) || (seenEdges.find(reversedEdge) != seenEdges.end());
 }
