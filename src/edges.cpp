@@ -41,7 +41,7 @@ Eigen::MatrixXi edges(const Eigen::MatrixXi &F)
   E.resize(v_start.size(),2);
   for (int i = 0; i<v_start.size(); ++i){ //add to the matrix
     E(i,0) = v_start[i];
-    E(i,0) = v_end[i];
+    E(i,1) = v_end[i];
   }
   return E;
 }
