@@ -259,5 +259,5 @@ repository](https://github.com/alecjacobson/geometry-processing-introduction/iss
 > `README.html` using
 > [multimarkdown](http://fletcherpenney.net/multimarkdown/):
 >
->     cat shared/markdown/header.md README.md | multimarkdown -o README.html
+>     cat shared/markdown/header.md README.md | multimarkdown --process-html -o README.html
 >
