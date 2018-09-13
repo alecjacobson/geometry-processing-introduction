@@ -3,6 +3,7 @@
 
 #include <Eigen/Core>
 // Compute the Euler Characteristic of a given triangle mesh.
+//    Chi = |V| - |E| + |F|.
 //
 // Inputs:
 //   F  #F by 3 list of triangle indices into some vertex list V
