@@ -1,7 +1,5 @@
 #include "edges.h"
 
-#include <iostream>
-
 Eigen::MatrixXi edges(const Eigen::MatrixXi &F)
 {
     Eigen::MatrixXi E;
