@@ -9,7 +9,7 @@ int euler_characteristic(const Eigen::MatrixXi &F)
 	Eigen::MatrixXi E = edges(F);
 	std::vector<int> V;
 	for (int i = 0; i < F.rows(); i++) {
-		for (int j = 0; j < 2; j++) {
+		for (int j = 0; j < 3; j++) {
 			if (std::find(V.begin(), V.end(), F(i, j)) == V.end()) {
 				V.push_back(F(i, j));
 			}
