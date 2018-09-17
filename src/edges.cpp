@@ -31,8 +31,9 @@ Eigen::MatrixXi edges(const Eigen::MatrixXi &F)
       my_vector.push_back(preE_b.row(i));
 
   std::sort(my_vector.begin(), my_vector.end(), &comp);
-  auto last = std::unique(my_vector.begin(), my_vector.end(), &equal);
-  my_vector.erase(last, my_vector.end()); 
+  std::vector<Eigen::RowVector2i>::iterator last_iterator = 
+        std::unique(my_vector.begin(), my_vector.end(), &equal);
+  my_vector.erase(last_iterator, my_vector.end()); 
 
   // Since duplicates have been removed, construct E using my_vector
   E.conservativeResize(my_vector.size(), 2);
