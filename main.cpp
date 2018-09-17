@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
   Eigen::MatrixXd V;
   Eigen::MatrixXi F;
   // Load in a mesh
-  igl::read_triangle_mesh(argc>1 ? argv[1] : "../shared/data/bunny.off", V, F);
+  igl::read_triangle_mesh(argc>1 ? argv[1] : "../shared/data/knight.off", V, F);
 
   Eigen::MatrixXi E = edges(F);
   int Chi = euler_characteristic(F);
