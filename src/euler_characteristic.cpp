@@ -13,9 +13,10 @@ int euler_characteristic(const Eigen::MatrixXi &F)
 
   // number of edges
   int num_E = E.rows(); 
-
-  // Construct a VectorXi that keeps track of unique vertex indices.
-  // Upper bound on the num of vertices = |E| * 2
+  
+  // We are not sure if all vertex indices in V have been used in F (as that is the input data - no guarantees).
+  // So, construct a VectorXi that keeps track of unique vertex indices.
+  // Upper bound on the num of vertices = |E| * 2.
   Eigen::VectorXi V(num_E * 2);
 
   // num_V tracks the number of unq vertices as we iterate over E
