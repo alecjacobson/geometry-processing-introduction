@@ -1,7 +1,7 @@
 #include "edges.h"
 #include "euler_characteristic.h"
 #include <igl/read_triangle_mesh.h>
-#include <igl/viewer/Viewer.h>
+#include <igl/opengl/glfw/Viewer.h>
 
 int main(int argc, char *argv[])
 {
@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
   std::cout<<"Euler Characteristic: "<<Chi<<std::endl;
 
   // Create a libigl Viewer object 
-  igl::viewer::Viewer viewer;
+  igl::opengl::glfw::Viewer viewer;
   // Set the vertices and faces for the viewer
-  viewer.data.set_mesh(V, F);
+  viewer.data().set_mesh(V, F);
   // Launch a viewer instance
   viewer.launch();
   return 0;
