@@ -104,14 +104,14 @@ the bunny):
 > this material and may opt to skip this section.
 
 Let's get familiar with the _explicit_ mesh representation of a discrete
-surface immersed in $\R^3$. Throughout the course, we will store the set of
-mesh vertices $V$[⁴](#⁴latex) and the set of triangles (a.k.a.
-faces) $F$ as two matrices: `V` and `F`.
+surface immersed in <img src="/tex/e1cba67bdff5655799960c665b6aa02b.svg?invert_in_darkmode&sanitize=true" align=middle width=6.5525476499999895pt height=26.76175259999998pt/>. Throughout the course, we will store the set of
+mesh vertices <img src="/tex/a9a3a4a202d80326bda413b5562d5cd1.svg?invert_in_darkmode&sanitize=true" align=middle width=13.242037049999992pt height=22.465723500000017pt/>[⁴](#⁴latex) and the set of triangles (a.k.a.
+faces) <img src="/tex/b8bc815b5e9d5177af01fd4d3d3c2f10.svg?invert_in_darkmode&sanitize=true" align=middle width=12.85392569999999pt height=22.465723500000017pt/> as two matrices: `V` and `F`.
 
-The matrix `V` is $|V|$ by 3 in size, where the ith row of this matrix contains
+The matrix `V` is <img src="/tex/4716870f3f422e3e30698c2aa13917a6.svg?invert_in_darkmode&sanitize=true" align=middle width=22.37447849999999pt height=24.65753399999998pt/> by 3 in size, where the ith row of this matrix contains
 the x-, y- and z-coordinates of the ith vertex of the mesh. 
 
-The matrix `F` is $|F|$ by 3 in size, where the jth row of this matrix contains
+The matrix `F` is <img src="/tex/92991de2a74552da6902a11d444ace8a.svg?invert_in_darkmode&sanitize=true" align=middle width=21.986370449999992pt height=24.65753399999998pt/> by 3 in size, where the jth row of this matrix contains
 the indices into the rows of `V` of the first, second and third corners of the
 jth triangle as a non-negative number (remember in C++ arrays and matrices
 start with index `0`). 
@@ -139,18 +139,16 @@ each triangle's directed edge as a _half-edge_.
 In a consistently oriented mesh, these triangles' corresponding half-edges
 (orange) will have opposite orientation.](images/half-edges.jpg)
 
-The number of vertices $|V|$ and number of faces $|F|$ and number of unique
-(undirected) edges $|E|$ are _intimately_ related. Adding a new triangle to a
+The number of vertices <img src="/tex/4716870f3f422e3e30698c2aa13917a6.svg?invert_in_darkmode&sanitize=true" align=middle width=22.37447849999999pt height=24.65753399999998pt/> and number of faces <img src="/tex/92991de2a74552da6902a11d444ace8a.svg?invert_in_darkmode&sanitize=true" align=middle width=21.986370449999992pt height=24.65753399999998pt/> and number of unique
+(undirected) edges <img src="/tex/6f1489510ace7328313aebec5fc3c626.svg?invert_in_darkmode&sanitize=true" align=middle width=22.21462484999999pt height=24.65753399999998pt/> are _intimately_ related. Adding a new triangle to a
 mesh may mean increasing the number of vertices and edges, too. The algebraic
 relationship between the number of vertices, edges and faces reveals the
 topological _genus_ of the surface via the _Euler Characteristic_ 
 
-$$
-χ = 2c - 2h - b,
-$$
+<p align="center"><img src="/tex/5f44d895386d2bb0121dc78eb7e09862.svg?invert_in_darkmode&sanitize=true" align=middle width=102.1782729pt height=14.611878599999999pt/></p>
 
-where $c$ is the number of connected components, $h$ is number of
-holes (as in donut), and $b$ is the number of connected components of the
+where <img src="/tex/3e18a4a28fdee1744e5e3f79d13b9ff6.svg?invert_in_darkmode&sanitize=true" align=middle width=7.11380504999999pt height=14.15524440000002pt/> is the number of connected components, <img src="/tex/2ad9d098b937e46f9f58968551adac57.svg?invert_in_darkmode&sanitize=true" align=middle width=9.47111549999999pt height=22.831056599999986pt/> is number of
+holes (as in donut), and <img src="/tex/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode&sanitize=true" align=middle width=7.054796099999991pt height=22.831056599999986pt/> is the number of connected components of the
 boundary of the surface.
 
 For meshes representing polyhedral surfaces, the Euler Characteristic can be
@@ -196,7 +194,7 @@ For this assignment you may not use
 
 ### `src/edges.cpp`
 
-From a list of triangles `F`, construct a $|E|$ by 2 matrix `E`, where the kth
+From a list of triangles `F`, construct a <img src="/tex/6f1489510ace7328313aebec5fc3c626.svg?invert_in_darkmode&sanitize=true" align=middle width=22.21462484999999pt height=24.65753399999998pt/> by 2 matrix `E`, where the kth
 row of this matrix contains the indices into the rows of `V` of the start and
 end point of the kth edge in the mesh. `E` should contain every _undirected
 edge_ exactly once. 
@@ -254,7 +252,7 @@ repository](https://github.com/alecjacobson/geometry-processing-introduction/iss
 > #### ⁴ LaTeX
 >
 > This markdown document, and those for all other assignments, contains
-> $\LaTeX$ math. GitHub just shows the un-evaluated LaTeX code, but other
+> <img src="/tex/87181ad2b235919e0785dee664166921.svg?invert_in_darkmode&sanitize=true" align=middle width=45.69716744999999pt height=22.465723500000017pt/> math. GitHub just shows the un-evaluated LaTeX code, but other
 > markdown browsers will show the typeset math. You can also generate
 > `README.html` using
 > [multimarkdown](http://fletcherpenney.net/multimarkdown/):
