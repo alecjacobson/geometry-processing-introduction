@@ -104,7 +104,7 @@ the bunny):
 > this material and may opt to skip this section.
 
 Let's get familiar with the _explicit_ mesh representation of a discrete
-surface immersed in $\R^3$. Throughout the course, we will store the set of
+surface immersed in $\mathbb{R}^3$. Throughout the course, we will store the set of
 mesh vertices $V$[⁴](#⁴latex) and the set of triangles (a.k.a.
 faces) $F$ as two matrices: `V` and `F`.
 
