@@ -104,7 +104,7 @@ the bunny):
 > this material and may opt to skip this section.
 
 Let's get familiar with the _explicit_ mesh representation of a discrete
-surface immersed in <img src="/tex/e1cba67bdff5655799960c665b6aa02b.svg?invert_in_darkmode&sanitize=true" align=middle width=6.5525476499999895pt height=26.76175259999998pt/>. Throughout the course, we will store the set of
+surface immersed in <img src="/tex/d03c1e146df015e061405cc425738d83.svg?invert_in_darkmode&sanitize=true" align=middle width=18.424726649999986pt height=26.76175259999998pt/>. Throughout the course, we will store the set of
 mesh vertices <img src="/tex/a9a3a4a202d80326bda413b5562d5cd1.svg?invert_in_darkmode&sanitize=true" align=middle width=13.242037049999992pt height=22.465723500000017pt/>[⁴](#⁴latex) and the set of triangles (a.k.a.
 faces) <img src="/tex/b8bc815b5e9d5177af01fd4d3d3c2f10.svg?invert_in_darkmode&sanitize=true" align=middle width=12.85392569999999pt height=22.465723500000017pt/> as two matrices: `V` and `F`.
 
