@@ -209,7 +209,7 @@ taks.
 
 ### Submission
 
-Submit your completed homework as a [New Pull Request to this repository](https://github.com/alecjacobson/geometry-processing-introduction/pulls).
+Submit your `src/` files on [MarkUs](https://markus.teach.cs.toronto.edu/csc419-2020-09/)
 
 ### Questions? 
 
