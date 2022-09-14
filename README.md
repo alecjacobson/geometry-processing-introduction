@@ -2,7 +2,7 @@
 
 > **To get started:** Clone (**do not fork publicly**) this repository
 > 
->     git clone --recursive http://github.com/alecjacobson/geometry-processing-introduction.git
+>     git clone http://github.com/alecjacobson/geometry-processing-introduction.git
 >
 
 Welcome to Geometry Processing! The purpose of this assignment will be to get
