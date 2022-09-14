@@ -10,7 +10,7 @@ you up and running with the two C++ libraries we will be using:
 [Eigen](http://eigen.tuxfamily.org) for dense and sparse linear algebra
 routines and [libigl](https://github.com/libigl/libigl) for geometry processing
 routines. We will make use of the OpenGL-based viewer used by the [libigl
-tutorial](http://libigl.github.io/libigl/tutorial/tutorial.html). This viewer
+tutorial](https://libigl.github.io/tutorial/). This viewer
 also depends on [glfw](http://www.glfw.org/download.html), a library for
 managing windows on Linux, Mac OS X and windows.
 
