@@ -3,6 +3,7 @@ if(TARGET igl::core)
 endif()
 
 include(FetchContent)
+message(STATUS "Finding/Downloading libigl...")
 FetchContent_Declare(
     libigl
     GIT_REPOSITORY https://github.com/libigl/libigl.git
