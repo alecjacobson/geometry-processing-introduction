@@ -160,7 +160,7 @@ computed very simply:
 Chi = |V| - |E| + |F|.
 ```
 
-Assuming no _unreferenced_ vertices in `V`, each of the qunatitites in the
+Assuming no _unreferenced_ vertices in `V`, each of the quantities in the
 right-hand side can be determined from `F` alone. This indicates that its a
 purely topological property. Changing the geometric positions (i.e., changing
 the vertex positions in `V`) will not affect the Euler Characteristic. Due to
@@ -205,7 +205,7 @@ edge_ exactly once.
 
 From the list of triangles `F`, return the Euler Characteristic `X` of the
 triangle mesh. You may and should use your `edges` function from the previous
-taks.
+task.
 
 ### Submission
 
